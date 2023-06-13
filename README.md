@@ -1,4 +1,4 @@
-# PrépaHub - Curriculums and Mark Calculator for Cycles Préparatoires
+# PrépaHub - Information and Mark Calculator for Preparatory Cycles
 
 Welcome to PrépaHub, your hub for information Preparatory Cycles in Tunisia, along with a mark calculator! 📚🧮
 
