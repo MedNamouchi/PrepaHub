@@ -65,7 +65,32 @@ li{
    padding-top: 78px;
 }
 .im4{
-    width: 40px;
+    width: 100px;
     padding-left:1110px;
-    padding-top: 20px;
+    padding-top: 320px;
 }
+.image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .image-container img:nth-child(2) {
+    z-index: 2;
+  }
+  .h1h{
+    font-family:'Outfit',sans-serif ;
+    font-weight: 400;
+    font-size: 100px;
+    padding-right: 800px;
+    margin-left: 100px;
+    margin-top: -30px;
+    line-height:0.8;
+   
+
+  }
