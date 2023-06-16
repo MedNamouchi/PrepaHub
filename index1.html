@@ -1,44 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang "fr">
-    <head>
-        <title></title>
-        <meta name="description" content="Ce site a été créé par Namouchi Mohamed Amine, 
-        un étudiant de l'IPEIEM, dans le but de vous aider à estimer votre moyenne au concours national des ingénieurs en Tunisie en 2023.">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="styles2.css">
-        <link rel="icon" type="image/x-icon" href="Logo_color.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="container-sm">
-              <a class="navbar-brand" href="index1.html"><img class="im2" src="PrepaHub_logo_text.png"alt="Page d'acceuil"></a>
-            </div>
-        <ul class="l1">
-            <li ><a class="l12" href="index1.html">Home</a></li>
-            <li><a class="l12">Calculator</a></li>
-            <li><a class="l12">About</a></li>
-            <li><a class="l12">Contact</a></li>
-            <li class="l11">Login</li>
-            <li class="ss"><button class="btn">Sign up</button></li>
-        </ul>    
-        </nav>
-        <div ><img class="im3" src="graphic_3.png"></div>
-        
-        
-        <div class="image-container">
-            <img class="im1" src="girl_graphic.png" alt="une belle fille">
-            <img class="im4" src="graphic_1.png">
-        </div>
-        <div class="container">
-            <h1 class="h1h">Garantissez  votre succes futur.</h1>
-            <img class="im5" src="graphic_2.png">
-        </div>
-        <form action="/search" method="get" class="search-form">
-            <input type="text" name="query" placeholder="Search..."class="search-input" />
-            <button type="submit" class="search-button">Search</button>
-          </form>
+<head>
+  <title>PrepaHub</title>
+  <meta
+    name="description"
+    content="Ce site a été créé par Namouchi Mohamed Amine, 
+        un étudiant de l'IPEIEM, dans le but de vous aider à estimer votre moyenne au concours national des ingénieurs en Tunisie en 2023."
+  />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles2.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <!--  ! Header start -->
+  <header>
+    <div class="navbar">
+      <div>
+        <img src="PrepaHub_logo_text.png" />
+      </div>
+      <ul class="links">
+        <li><a>Maison</a></li>
+        <li><a>Calculatrice</a></li>
+        <li><a>Aide</a></li>
+      </ul>
+      <div class="auth">
+        <a href="#" class="text-auth">Log in</a>
+        <button class="button-auth">Sign up</button>
+      </div>
+      <div class="hamburger">
+        <img
+          style="height: 1.5rem"
+          src="https://img.uxwing.com/wp-content/themes/uxwing/download/web-app-development/hamburger-menu-icon.png"
+          alt="navigation links button"
+        />
+      </div>
+    </div>
+  </header>
+  <!--  ! Header end -->
 
-        
-        
-    </body>
+  <div><img class="im3" src="graphic_3.png" /></div>
+
+  <div class="image-container">
+    <img class="im1" src="girl_graphic.png" alt="une belle fille" />
+    <img class="im4" src="graphic_1.png" />
+  </div>
+  <div class="container">
+    <h1 class="h1h">Garantissez votre succes futur.</h1>
+    <img class="im5" src="graphic_2.png" />
+  </div>
+  <form action="/search" method="get" class="search-form">
+    <input
+      type="text"
+      name="query"
+      placeholder="Search..."
+      class="search-input"
+    />
+    <button type="submit" class="search-button">Search</button>
+  </form>
+</body>

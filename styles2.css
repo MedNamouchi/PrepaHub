@@ -1,151 +1,211 @@
 @import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
-body{
-    background-image:linear-gradient(90deg,hsl(44, 91%, 83%),hsl(40, 18%, 97%)) ;
+* {
+  font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
 }
-.im1{
-    margin-left: 1050px;;
-    margin-top: -48px;
-    padding-left: 0%;
-    width: 550px;
-}
-.im2{
-    
-    margin-left: 7%;
-    margin-top: -9%;
-}
-li{
-    font-family:'Outfit',sans-serif ;
-    margin-right: 60px;
-    font-weight: 500;
-}
-.navbar{
-    position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        margin-top:4% ;
-        margin-left: 7%;
-}
-    
-.l1{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    display: center;
-}
-.l11{
-    padding-left: 280px;
-}
-.l12{
-    text-decoration: none;
 
+body {
+  background-image: linear-gradient(
+    90deg,
+    hsl(44, 91%, 83%),
+    hsl(40, 18%, 97%)
+  );
 }
-.l12:visited{
-    color:hsl(22, 95%, 62%);
+.im1 {
+  margin-left: 1050px;
+  margin-top: -48px;
+  padding-left: 0%;
+  width: 550px;
 }
-.btn{
-    border-top-right-radius:30px ;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    background-color: black;
-    color:white;
-    font-family:'Outfit',sans-serif ;
-    font-weight: 400;
-    border:none;
-    text-align: center;
-    text-decoration: none;
-    padding: 15px 32px;
-    margin-top: -18px;
+.im2 {
+  margin-left: 7%;
+  margin-top: -9%;
 }
-.im3{
-   width: 45px;
-   padding-left: 976px;
-   padding-top: 78px;
+
+/* * Header CSS code  */
+li {
+  list-style: none;
 }
-.im4{
-    width: 100px;
-    padding-left:1110px;
-    padding-top: 320px;
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+a:hover {
+  color: orange;
+}
+.navbar {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+.navbar .hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.text-auth {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-size: 1.2rem;
+  transition: all 0.4s ease;
+}
+.text-auth:hover {
+  scale: 1.1;
+  color: rgb(211, 146, 25);
+}
+.text-auth:active {
+  scale: 0.9;
+}
+
+.button-auth {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px 20px 20px 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.4s ease;
+}
+
+.button-auth:hover {
+  scale: 1.1;
+  color: rgb(211, 146, 25);
+}
+.button-auth:active {
+  scale: 0.9;
+}
+/* media queries for the header  */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 2rem 1lrem;
+  }
+  .navbar .links,
+  .navbar .auth {
+    display: none;
+  }
+  .navbar .hamburger {
+    display: block;
+  }
+}
+/* * end of header css code  */
+
+.btn {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: black;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 32px;
+  margin-top: -18px;
+}
+.im3 {
+  width: 45px;
+  padding-left: 976px;
+  padding-top: 78px;
+}
+.im4 {
+  width: 100px;
+  padding-left: 1110px;
+  padding-top: 320px;
 }
 .image-container {
-    position: relative;
-  }
-  
-  .image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  
-  .image-container img:nth-child(2) {
-    z-index: 2;
-  }
-  .h1h{
-    font-family:'Outfit',sans-serif ;
-    font-weight: 400;
-    font-size: 100px;
-    padding-right: 800px;
-    margin-left: 100px;
-    margin-top: 0px;
-    line-height:0.8;
-  }
-  .im5{
-    width: 140px;
-    margin-left:499px;
-    margin-top: -44px;
+  position: relative;
+}
 
-  }
-  .container {
-    position: relative;
-  }
-  
-  .container img {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .container h1 {
-    position: absolute;
-    z-index: 2;
-  }
-  .search-form{
-    margin-top: 307px;
-    margin-left:100px;
-  }
-  .search-form {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    width: 250px;
-  }
-  
-  .search-button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 8px;
-  }
-  
-  /* Optional: Hover and Focus Styles */
-  .search-input:hover,
-  .search-input:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  .search-button:hover {
-    background-color: #0056b3;
-  }
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.image-container img:nth-child(2) {
+  z-index: 2;
+}
+.h1h {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  padding-right: 800px;
+  margin-left: 100px;
+  margin-top: 0px;
+  line-height: 0.8;
+}
+.im5 {
+  width: 140px;
+  margin-left: 499px;
+  margin-top: -44px;
+}
+.container {
+  position: relative;
+}
+
+.container img {
+  position: relative;
+  z-index: 1;
+}
+
+.container h1 {
+  position: absolute;
+  z-index: 2;
+}
+.search-form {
+  margin-top: 307px;
+  margin-left: 100px;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 250px;
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+/* Optional: Hover and Focus Styles */
+.search-input:hover,
+.search-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
